@@ -1,0 +1,58 @@
+# 3-1 项目分析及会员登录
+微电影网站
+前台模块(home)
+数据模型：modles.py
+表单处理：home/forms.py
+模板处理：templates/home
+静态目录：static
+
+后台模块(admin)
+数据模型：modles.py
+表单处理：admin/forms.py
+模型目录：templates/admin
+静态目录：static
+
+蓝图构建目录
+1. 定义蓝图(app/admin/__init__.py)
+from flask import Blueprint
+admin = Blueprint("admin", __name__)
+import views
+
+2. 注册蓝图(app/__init__.py)
+from admin import admin as admin_blueprint
+app.register_blueprint(admin_blueprint, url_prefix="/admin")
+
+3. 调用蓝图
+from . import admin
+@admin.route("/")
+
+会员及会员登录日志数据模块设计
+1. 安装数据库连接依赖包
+pip install flask-sqlalchemy
+
+2. 定义sqlite数据库连接
+form flask_sqlalchemy import SQLAlchemy
+from flask import Flask
+
+import os
+basedir = os.path.abspath(os.path.dirname(__file__))
+
+app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+db = SQLAlchemy(app)
+
+3. 定义会员数据模型
+id = 编号
+name = 账号
+pwd = 密码
+email = 邮箱
+phone = 手机号
+info = 简介
+face = 头像
+addtime = 注册时间
+uuid = 唯一标志符
+
+
+
+
