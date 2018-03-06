@@ -54,5 +54,39 @@ addtime = 注册时间
 uuid = 唯一标志符
 
 
+# 3-2 标签-电影-上映预告数据模型设计
+
+定义标签数据模型
+id: 编号
+name: 标题
+movies: 电影外键关联
+addtime: 创建时间
+
+定义电影数据模型
+id: 编号
+title: 电影标题
+url: 电影地址
+info: 电影简介
+logo: 电影封面
+star: 星级
+playnum: 电影播放量
+commentnum: 电影评论量
+tag_id: 所属标签
+area: 地区
+release_time: 发布时间
+length: 电影长度
+addtime: 添加时间
+comments: 电影评论外键关联
+moviecol: 电影收藏外键关联
+
+定义上映预告数据模型
+id: 编号
+title: 上映预告标题
+logo: 上映预告封面
+addtime: 创建时间
+
+
+
+
 
 
