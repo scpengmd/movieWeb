@@ -183,3 +183,35 @@ def register():
 
 # 收藏电影
 @home.route("/moviecol/")
+
+
+# 4-3 电影列表-搜索页面搭建
+
+电影列表页面搭建
+# 列表
+@home.route("/")
+def index():
+    return render_template("home/index.html")
+
+# 动画
+@home.route("/animation/")
+def animation():
+    return render_template("home/animation.html")
+
+电影搜索页面搭建
+# 搜索
+@home.route("/search/")
+def search():
+    return render_template("home/search.html")
+
+# 4-4 电影详情页-404页面搭建
+
+# 详情
+@home.route("/play/")
+def play():
+    return render_template("home/play.html")
+
+# 404
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template("common/404.html"), 404
