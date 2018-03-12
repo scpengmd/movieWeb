@@ -293,3 +293,30 @@ def preview_add():
 @admin.route("/preview/list/")
 def preview_list():
     return render_template("admin/preview_list.html")
+
+
+# 5-4 会员-收藏-评论管理页面搭建
+会员管理页面搭建
+# 会员列表
+@admin.route("/user/list/")
+def user_list():
+    return render_template("admin/user_list.html")
+
+
+# 查看会员
+@admin.route("/user/view/")
+def user_view():
+    return render_template("admin/user_view.html")
+
+评论管理页面搭建
+# 评论列表
+@admin.route("/comment/list/")
+def comment_list():
+    return render_template("admin/comment_list.html")
+
+
+收藏管理页面搭建
+# 收藏列表
+@admin.route("/moviecol/list/")
+def moviecol_list():
+    return render_template("admin/moviecol_list.html")
