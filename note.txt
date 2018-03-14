@@ -320,3 +320,75 @@ def comment_list():
 @admin.route("/moviecol/list/")
 def moviecol_list():
     return render_template("admin/moviecol_list.html")
+
+# 5-5 收藏-日志-角色管理页面搭建
+# 操作日志列表
+@admin.route("/oplog/list/")
+def oplog_list():
+    return render_template("admin/oplog_list.html")
+
+
+# 管理员日志管理页面搭建
+@admin.route("/adminloginlog/list/")
+def adminloginlog_list():
+    return render_template("admin/adminloginlog_list.html")
+
+
+# 会员日志管理页面搭建
+# 会员日志列表
+@admin.route("/userloginlog/list/")
+def userloginlog_list():
+    return render_template("admin/userloginlog_list.html")
+
+
+角色管理页面搭建
+# 添加角色
+@admin.route("/role/add/")
+def role_add():
+    return render_template("admin/role_add.html")
+
+
+# 角色列表
+@admin.route("/role/list/")
+def role_list():
+    return render_template("admin/role_list.html")
+
+
+权限管理页面搭建
+# 添加权限
+@admin.route("/auth/add/")
+def auth_add():
+    return render_template("admin/auth_add.html")
+
+
+# 角色列表
+@admin.route("/role/list/")
+def auth_list():
+    return render_template("admin/auth_list.html")
+
+# 5-6 管理员管理页面搭建
+# 添加管理员
+@admin.route("/admin/add/")
+def admin_add():
+    return render_template("admin/admin_add.html")
+
+
+# 管理员列表
+@admin.route("/admin/list/")
+def admin_list():
+    return render_template("admin/admin_list.html")
+
+
+# 6-1 管理员登陆
+# 管理员登陆
+1. app/__init__.py中创建对象
+2. app/models.py中导入db对象
+3. app/admin/forms.py中定义表单验证
+4. app/templates/admin/login.html中使用表单字段、信息验证，消息闪现
+5. app/admin/views.py中处理登录请求、保存会话
+6. app/admin/views.py定义登录装饰器、访问控制
+
+1. 模型: Admin
+2. 表单：LoginForm
+3. 请求方法：GET/POST
+4. 访问控制： 无

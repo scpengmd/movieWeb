@@ -1,16 +1,6 @@
-from flask_sqlalchemy import SQLAlchemy
-from flask import Flask
-
-import os
-
-basedir = os.path.abspath(os.path.dirname(__file__))
-
-app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///' + os.path.join(basedir, 'data.sqlite')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
-db = SQLAlchemy(app)
-
+# coding:utf8
 from datetime import datetime
+from app import db
 
 
 # 会员
@@ -158,6 +148,11 @@ class Admin(db.Model):
     def __repr__(self):
         return "<Admin %r>" % self.name
 
+    def check_pwd(self, pwd):
+        from werkzeug.security import check_password_hash
+        return check_password_hash(self.pwd, pwd)
+
+
 # 管理员登录日志
 class Adminlog(db.Model):
     __tablename__ = "adminlog"
@@ -182,6 +177,7 @@ class Oplog(db.Model):
     def __repr__(self):
         return "<Oplog %r>" % self.id
 
+
 if __name__ == '__main__':
     # db.create_all()
     """
@@ -201,4 +197,3 @@ if __name__ == '__main__':
     )
     db.session.add(admin)
     db.session.commit()
-
