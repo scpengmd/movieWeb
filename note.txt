@@ -401,7 +401,7 @@ def admin_list():
 3. 请求方法: GET、POST
 4. 访问控制：@admin_login_req
 
-
+# 6-3 标签管理
 # 电影管理
 1. 模型：Movie
 2. 表单: MovieForm

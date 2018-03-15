@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="b7d3a601-5902-453e-88f7-448acf0607db" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/__init__.py" afterPath="$PROJECT_DIR$/app/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/forms.py" afterPath="$PROJECT_DIR$/app/admin/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/views.py" afterPath="$PROJECT_DIR$/app/admin/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/data.sqlite" afterPath="$PROJECT_DIR$/app/data.sqlite" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models.py" afterPath="$PROJECT_DIR$/app/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/admin/movie_add.html" afterPath="$PROJECT_DIR$/app/templates/admin/movie_add.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/note.txt" afterPath="$PROJECT_DIR$/note.txt" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
-      <file leaf-file-name="note.txt" pinned="false" current-in-tab="false">
+      <file leaf-file-name="note.txt" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/note.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11016">
-              <caret line="408" column="24" lean-forward="false" selection-start-line="408" selection-start-column="24" selection-end-line="408" selection-end-column="24" />
+            <state relative-caret-position="558">
+              <caret line="403" column="2" lean-forward="false" selection-start-line="403" selection-start-column="2" selection-end-line="403" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -74,7 +68,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="540">
@@ -231,12 +225,12 @@
         <option value="$PROJECT_DIR$/app/templates/ui/admin_page.html" />
         <option value="$PROJECT_DIR$/app/templates/admin/tag_list.html" />
         <option value="$PROJECT_DIR$/app/templates/admin/tag_edit.html" />
-        <option value="$PROJECT_DIR$/note.txt" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/app/admin/views.py" />
         <option value="$PROJECT_DIR$/app/templates/admin/movie_add.html" />
         <option value="$PROJECT_DIR$/app/admin/forms.py" />
         <option value="$PROJECT_DIR$/app/models.py" />
+        <option value="$PROJECT_DIR$/note.txt" />
       </list>
     </option>
   </component>
@@ -750,14 +744,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/note.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11016">
-          <caret line="408" column="24" lean-forward="false" selection-start-line="408" selection-start-column="24" selection-end-line="408" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/templates/admin/tag_edit.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="972">
@@ -833,6 +819,14 @@
           <folding>
             <element signature="e#14#43#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/note.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="403" column="2" lean-forward="false" selection-start-line="403" selection-start-column="2" selection-end-line="403" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
