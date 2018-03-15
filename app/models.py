@@ -62,7 +62,7 @@ class Movie(db.Model):
     area = db.Column(db.String(255))
     release_time = db.Column(db.Date)
     length = db.Column(db.String(100))
-    addtime = db.Column(db.DateTime, index=True, default=datetime.utcnow)
+    addtime = db.Column(db.DateTime, index=True, default=datetime.now)
     comments = db.relationship("Comment", backref='movie')
     moviecols = db.relationship("Moviecol", backref='movie')
 
